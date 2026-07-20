@@ -4,7 +4,7 @@
 ## Overview
 This document records all additions and modifications made to the Ethiopia Financial Inclusion dataset during Task 1.
 
-## Enrichment Date
+## Enrichment Date 
 2025-01-20
 
 ## Enricher
