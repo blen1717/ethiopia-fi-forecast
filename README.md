@@ -40,11 +40,12 @@ Key Insights
 
 📊 Forecast Results (2025-2027)
 
-Scenario 2025 2026 2027
-Baseline 59.1% 61.0% 62.9%
-With Events 60.5% 61.9% 62.9%
-Optimistic 61.0% 62.5% 62.9%
-Pessimistic 59.8% 61.3% 62.9%
+|Scenario |2025 |2026 |2027|
+|---------|-----|-----|----|
+|Baseline| 59.1% |61.0%| 62.9%|
+|With Events| 60.5%|61.9%| 62.9%|
+|Optimistic |61.0% |62.5% |62.9%|
+|Pessimistic |59.8% |61.3%| 62.9%|
 
 📚 References
 
