@@ -1,0 +1,17 @@
+parent_id,related_indicator,impact_direction,impact_estimate,lag_months,evidence_basis
+EVT_0001,ACC_OWNERSHIP,increase,15.0,12,Kenya M-Pesa evidence
+EVT_0001,ACC_MM_ACCOUNT,increase,5.0,6,Empirical observation
+EVT_0001,USG_P2P_COUNT,increase,25.0,6,Empirical
+EVT_0002,ACC_4G_COV,increase,15.0,12,Network investment
+EVT_0002,AFF_DATA_INCOME,decrease,20.0,12,Competition effect
+EVT_0003,ACC_MM_ACCOUNT,increase,5.0,6,Theoretical
+EVT_0003,USG_MPESA_USERS,increase,10.0,3,Empirical
+EVT_0004,ACC_OWNERSHIP,increase,10.0,24,India Aadhaar
+EVT_0004,GEN_GAP_ACC,decrease,5.0,24,India Aadhaar
+EVT_0005,AFF_DATA_INCOME,increase,30.0,3,Empirical
+EVT_0006,USG_CROSSOVER,increase,0.5,0,Empirical
+EVT_0007,USG_MPESA_ACTIVE,increase,15.0,3,Tanzania interoperability
+EVT_0007,USG_P2P_COUNT,increase,10.0,3,Tanzania interoperability
+EVT_0008,USG_P2P_COUNT,increase,15.0,6,India UPI
+EVT_0009,ACC_OWNERSHIP,increase,8.0,12,Theoretical
+EVT_0010,AFF_DATA_INCOME,increase,10.0,1,Empirical
