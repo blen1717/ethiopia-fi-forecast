@@ -1,48 +1,57 @@
-# Week 11 Interim Submission
+# Ethiopia Financial Inclusion Forecasting System
 
-## Submitted By
-Blen Assefa
+## 📋 Project Overview
+Forecasting Ethiopia's digital financial transformation using time series methods for 2025-2027.
 
-July 20, 2026
+## 📊 Schema Documentation
 
-## Overview
-Task 1 (Data Enrichment) & Task 2 (EDA) for Ethiopia Financial Inclusion Forecasting.
+| record_type | Description |
+|-------------|-------------|
+| observation | Actual measured values from surveys, reports, operators |
+| event | Policy changes, product launches, milestones |
+| impact_link | Relationship between events and indicators |
+| target | Official policy goals |
 
-## Files Included
+| Field | Description | Applies To |
+|-------|-------------|------------|
+| record_id | Unique identifier | All |
+| record_type | Type of record | All |
+| category | Event classification | Event only |
+| pillar | Dimension being measured | Observation, Target |
+| indicator_code | Standardized indicator code | Observation, Impact Link |
+| parent_id | Links impact to parent event | Impact Link only |
+| impact_direction | Increase/Decrease | Impact Link only |
+| lag_months | Delay before effect manifests | Impact Link only |
 
-### Data Files
-- ethiopia_fi_enriched_data.csv - Enriched dataset (68 records)
+## 🚀 How to Run
 
-### Report
-- interim_report.pdf - Complete interim report
+`bash
+pip install -r src/requirements.txt
+streamlit run dashboard/app.py
+pytest src/tests/ -v
 
-### Visualizations
-- coverage_heatmap.png - Temporal coverage
-- data_quality.png - Data quality assessment
-- account_ownership_trajectory.png - Account ownership trend
-- access_metrics.png - Growth rates & gender gap
-- mobile_money_trend.png - Mobile money penetration
-- usage_metrics.png - Digital payment adoption
-- infrastructure_trends.png - 4G, mobile, Fayda
-- event_timeline.png - Event timeline
-- correlation_matrix.png - Indicator correlations
+Key Insights
 
-### Documentation
-- data_enrichment_log.md - All additions documented
-- CHANGES_SUMMARY.md - Summary of changes
-- README.md - This file
-
-## Key Insights (5)
-
-1. Access growth slowed despite mobile money boom (46% → 49%, +3pp)
-2. P2P surpassed ATM for first time (P2P/ATM = 1.08)
+1. Access growth slowed (46% → 49%, +3pp, 2021-2024)
+2. P2P surpassed ATM (P2P/ATM = 1.08)
 3. 4G coverage doubled (37.5% → 70.8%)
-4. Gender gap persists at 18pp, women hold 14% of mobile money accounts
-5. Registration ≠ Usage: M-Pesa only 66% active
+4. Gender gap persists at 18pp
+5. M-Pesa only 66% active
 
-## How to Use
+📊 Forecast Results (2025-2027)
 
-### Load the dataset
-`python
-import pandas as pd
-df = pd.read_csv('ethiopia_fi_enriched_data.csv')
+Scenario 2025 2026 2027
+Baseline 59.1% 61.0% 62.9%
+With Events 60.5% 61.9% 62.9%
+Optimistic 61.0% 62.5% 62.9%
+Pessimistic 59.8% 61.3% 62.9%
+
+📚 References
+
+· Global Findex Database: https://worldbank.org/globalfindex
+· National Bank of Ethiopia: https://nbe.gov.et
+· EthSwitch: https://ethswitch.com
+
+
+
+Submitted: July 21, 2026
